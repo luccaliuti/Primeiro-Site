@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!-- meta - informações ao navegador -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Lucca">
+    <meta name="assunto" content="Informações sobre o Rock Nacional">
+    <title>Página sobre o Rock Nacional</title>
+    <link rel="icon" href="img/icons8-música-rock-48.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<h1> Pagina 2 - Formulario de pesquisa 🎸</h1>
+
+<!-- Menu de navegação -->
+
+<nav>
+ <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="fotos.html">Foto da historia do rock</a></li>
+ </ul>
+</nav>
+<hr>
+
+<main>
+    <h2>Preencha o Formulario</h2>
+<form action="/submit-form">
+<fieldset>
+    <legend>Informações Gerais</legend>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
+
+    
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email" placeholder="Informe seu email">
+
+    <label for="dataNascimento">Data de Nascimento</label>
+    <input type="date" name="dataNascimento" id="dataNascimento">
+    
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" id="idade" min="12" max="100" placeholder="Informe sua idade"><br><br>
+ 
+</fieldset>
+<br>
+
+<fieldset>
+    <legend>Participe da nossa galeria de fotos!!</legend>
+<p>Envie sua foto em um show para adicionarmos em nossa galeria!</p>
+<input type="file" name="anexofoto" id="anexofoto">
+<textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva a legenda da sua foto aqui..."></textarea><br>
+
+</fieldset>
+<br>
+
+<br>
+<fieldset>
+
+    <legend>Informações sobre a bana favorita</legend><br>
+    <label for="bandafavorita">Qual a sua banda favorita</label>  
+    <input type="text" name="bandafavorita" id="bandafavorita" placeholder="Escreva aqui"><br><br> 
+     
+ <p>Qual é seu genero de rock favorito?</p>   
+<select name="generofavorito" id="generofavorito">
+<option value="Rock">Rock</option>
+<option value="Alternativo">Alternativo</option>
+<option value="Clássico">Clássico</option>
+<option value="Punk">Punk</option>
+<option value="Metal">Metal</option>
+<option value="Outros">Outros</option>
+</select>
+
+<p>Qual é a sua plataforma de streaming de musica favorita?</p>
+<input type="radio" name="plataforma" id="spotify" value="spotify">
+<label for="spotify">Spotify</label>
+
+<input type="radio" name="plataforma" id="deezer" value="deezer">
+<label for="deezer">Deezer</label>
+
+<input type="radio" name="plataforma" id="applemusic" value="applemusic">
+<label for="applemusic">Applemusic</label>
+
+<p>Qual dessas bandas de rock nacional você conhece?</p>
+
+<input type="checkbox" name="bandas" id="LegiaoUrbana">
+<label for="LegiaoUrbana">Legião Urbana</label>
+
+<input type="checkbox" name="bandas" id="titas">
+<label for="titas">Titãs</label>
+
+<input type="checkbox" name="bandas" id="paralamasdosucesso">
+<label for="paralamasdosucesso">Paralamas do sucesso</label>
+
+<input type="checkbox" name="bandas" id="capitalinicial">
+<label for="capitalinicial">Capital Inicial</label>
+
+</fieldset>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+
+
+
+</main>
+
+<!-- rodapé da página -->
+<footer>
+    <p> &lt; &copy; copyright - App - Rock Nacional</p>
+</footer>
+
+
+</body>
+
+</html>
